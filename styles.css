@@ -1,0 +1,118 @@
+
+
+
+:root {
+	--color1: #1F2937;
+	--color2: #F9FAF8;
+	--color3: #E5E7EB;
+	--color4: #3882F6;
+}
+
+html {
+	font-size: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.add-padding {
+	padding: 0 15%;
+}
+
+header {
+	width: 100%;
+	background-color: var(--color1);
+}
+
+header nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav * {
+	color: var(--color3);
+}
+
+header nav .icons {
+	display: flex;
+	align-items: center;
+}
+
+header nav img {
+	width: 28px;
+	padding: 1.3rem 0;
+	
+}
+
+header nav p  {
+	margin-left: 10px;
+	font-size: 2.4rem;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav li {
+	list-style-type: none;
+}
+
+header nav a {
+	font-size: 1.8rem;
+	text-decoration: none;
+	margin-right: 20px;
+	font-weight: 600;
+}
+
+header nav a:hover {
+	border-bottom: 1px solid white;
+}
+
+header .hero-div * {
+	color: var(--color2);
+}
+
+header .hero-div {
+	padding: 10vh 0;
+	display: flex;
+	gap: 5%;
+}
+
+header .hero-div h1 {
+	font-size: 4.8rem;
+}
+
+header .hero-div p {
+	font-size: 1.8rem;
+	font-weight: 300;
+	margin: 20px 0;
+	color: var(--color3);
+	
+}
+
+header .hero-div img {
+	width: 400px;
+	height: 300px;
+	object-fit: contain;
+}
+
+header .hero-div button {
+	background-color: var(--color4);
+	border: none;
+	padding: 8px 20px;
+	border-radius: 5px;
+	font-weight: 700;
+}
