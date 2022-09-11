@@ -78,7 +78,7 @@ header nav a {
 }
 
 header nav a:hover {
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid var(--color3);
 }
 
 header .hero-div * {
@@ -114,5 +114,71 @@ header .hero-div button {
 	border: none;
 	padding: 8px 20px;
 	border-radius: 5px;
-	font-weight: 700;
+	cursor: pointer;
+	font-size: 1.6rem;
+}
+
+#ice-creams {
+	height: 90vh;
+	padding: 10vh 0 20vh 0;
+}
+
+#ice-creams h1 {
+	text-align: center;
+	font-size: 3.6rem;
+	color: var(--color1);
+}
+
+#ice-creams .ice-images {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#ice-creams .an-image {
+	margin: 10px 15px;
+}
+
+#ice-creams img {
+	width: 200px;
+	border: 3px solid var(--color4);
+	padding: 50px;
+	border-radius: 15px;
+}
+
+#ice-creams img:hover {
+	width: 220px;
+	border: 5px solid var(--color4);
+}
+
+#ice-creams p {
+	text-align: center;
+	width: 200px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-top: 5px;
+	color: var(--color1);
+}
+
+#ice-quote {
+	width: 100%;
+	background-color: var(--color3);
+	padding: 20vh 20%;
+}
+
+#ice-quote .quote {
+	font-size: 3.6rem;
+	font-style: italic;
+	font-weight: 100;
+	color: var(--color1)
+}
+
+#ice-quote .quote-maker {
+	color: var(--color1);
+	text-align: right;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-top: 20px;
 }
