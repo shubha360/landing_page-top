@@ -1,12 +1,11 @@
-
-
-
 :root {
 	--color1: #1F2937;
 	--color2: #F9FAF8;
 	--color3: #E5E7EB;
 	--color4: #3882F6;
 }
+
+/* PAGE WIDE STYLES */
 
 html {
 	font-size: 10px;
@@ -23,17 +22,30 @@ html {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .add-padding {
 	padding: 0 15%;
 }
 
+button {
+	color: white;
+	padding: 8px 20px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* HEADER STYLES */
+
 header {
 	width: 100%;
 	background-color: var(--color1);
 }
+
+/* NAVIGATION BAR STYLES */
 
 header nav {
 	width: 100%;
@@ -59,7 +71,7 @@ header nav img {
 
 header nav p  {
 	margin-left: 10px;
-	font-size: 2.4rem;
+	font-size: 2.8rem;
 }
 
 header nav ul {
@@ -74,12 +86,14 @@ header nav a {
 	font-size: 1.8rem;
 	text-decoration: none;
 	margin-right: 20px;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 header nav a:hover {
 	border-bottom: 2px solid var(--color3);
 }
+
+/* MAIN HERO STYLES */
 
 header .hero-div * {
 	color: var(--color2);
@@ -100,27 +114,25 @@ header .hero-div p {
 	font-weight: 300;
 	margin: 20px 0;
 	color: var(--color3);
-	
 }
 
 header .hero-div img {
-	width: 400px;
-	height: 300px;
+	width: 100%;
+	max-width: 500px;
+	min-width: 280px;
 	object-fit: contain;
+	border-radius: 5px;
 }
 
 header .hero-div button {
 	background-color: var(--color4);
 	border: none;
-	padding: 8px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 1.6rem;
 }
 
+/* ICE CREAM IMAGES STYLES */
+
 #ice-creams {
-	height: 90vh;
-	padding: 10vh 0 20vh 0;
+	padding: 10vh 0 10vh 0;
 }
 
 #ice-creams h1 {
@@ -143,14 +155,9 @@ header .hero-div button {
 
 #ice-creams img {
 	width: 200px;
-	border: 3px solid var(--color4);
+	border: 5px solid var(--color4);
 	padding: 50px;
 	border-radius: 15px;
-}
-
-#ice-creams img:hover {
-	width: 220px;
-	border: 5px solid var(--color4);
 }
 
 #ice-creams p {
@@ -162,10 +169,13 @@ header .hero-div button {
 	color: var(--color1);
 }
 
+/* QUOTE STYLES */
+
 #ice-quote {
 	width: 100%;
 	background-color: var(--color3);
-	padding: 20vh 20%;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 #ice-quote .quote {
@@ -180,5 +190,143 @@ header .hero-div button {
 	text-align: right;
 	font-size: 2rem;
 	font-weight: 600;
-	margin-top: 20px;
+	margin-top: 30px;
+}
+
+/* ORDER STYLES */
+
+#ice-order {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+#ice-order * {
+	color: white;
+}
+
+#ice-order .order-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color4);
+	padding: 40px 5%;
+	border-radius: 5px;
+}
+
+#ice-order .order-hero {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+#ice-order .order-text {
+	font-size: 1.6rem;
+	margin-top: 8px;
+}
+
+#ice-order button {
+	background-color: transparent;
+	border: 3px solid white;
+}
+
+#ice-order button:hover {
+	background-color: white;
+	color: var(--color4);
+}
+
+/* FOOTER STYLES */
+
+footer {
+	width: 100%;
+	background-color: var(--color1);
+	padding: 30px 0;
+}
+
+footer * {
+	color: white;
+}
+
+footer p {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+footer a {
+	font-weight: 600;
+}
+
+@media (max-width: 1350px) {
+	.add-padding {
+		padding: 0 10%;
+	}
+}
+
+@media (max-width: 1150px) {
+	.add-padding {
+		padding: 0 5%;
+	}
+}
+
+@media (min-width: 1050px) and (min-height: 550px) {
+
+	#ice-creams {
+		height: 70vh;
+	}
+
+	#ice-creams img:hover {
+		width: 220px;
+		border: 5px solid var(--color4);
+	}
+}
+
+@media (max-width: 800px) {
+
+	#ice-order .button-div {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 750px) {
+
+	header nav {
+		justify-content: center;
+	}
+
+	header ul {
+		width: 0%;
+		display: none;
+		visibility: hidden;
+	}
+
+	header .hero-div {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 5vh;
+	}
+
+	header .hero-div img {
+		margin-top: 20px
+	}
+
+	#ice-quote .quote {
+		font-size: 3rem;
+	}
+
+	#ice-quote .quote-maker {
+		font-size: 1.6rem;
+	}
+}
+
+@media (max-width: 350px) {
+
+	header nav img {
+		width: 24px;
+	}
+
+	header nav p {
+		font-size: 2.3rem;
+	}
 }
