@@ -1,7 +1,7 @@
 # odin-landing-page
 Responsive landing page design inspired from The Odin Project. Only used HTML and CSS.
 
-[Visit the page]()
+[Visit the page](https://shubha360.github.io/odin-landing-page/)
 
 ## Odin Project References -
 
